@@ -1,4 +1,5 @@
 package database;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.sql.*;
 import java.util.ArrayList;
@@ -33,10 +34,10 @@ public class Driver {
                 System.out.println("Product inserted!");
             }
             return statement.getResultSet();
-        } catch (SQLException sqlException) {
-            sqlException.printStackTrace();
+        } catch (SQLException | JsonProcessingException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return null;
     }
 
     private ResultSet getQuery(String query) {
