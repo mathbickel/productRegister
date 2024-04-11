@@ -18,10 +18,6 @@ public class Main {
         return new ProductController().store(product);
     }
 
-    public static void test() {
-        System.out.println("teste");
-    }
-
     public static ArrayList<ProductData> showProducts() {
         return new ProductController().show();
     }
