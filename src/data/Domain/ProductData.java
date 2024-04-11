@@ -1,15 +1,15 @@
 package data.Domain;
 
-import java.util.ArrayList;
+import java.lang.reflect.Array;
 
 public abstract class ProductData {
     int id;
     String name;
     String description;
     double value;
-    ArrayList<Integer> dimensions;
+    Array dimensions;
 
-    public ProductData(int id, String name, String description, double value, ArrayList<Integer> dimensions) {
+    public ProductData(int id, String name, String description, double value, Array dimensions) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -20,5 +20,5 @@ public abstract class ProductData {
     public abstract String getName();
     public abstract String getDescription();
     public abstract double getValue();
-    public abstract ArrayList<Integer> getDimensions();
+    public abstract Array getDimensions();
 }

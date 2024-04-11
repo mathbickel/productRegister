@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-//        showProducts();
-        createProd();
+        showProducts();
+//        createProd();
     }
 
     public static ProductData createProd() {
@@ -14,7 +14,7 @@ public class Main {
         dimensions.add(10);
         dimensions.add(15);
         dimensions.add(17);
-        ProductData product = new Product(2, "Tênis Nike", "Air max 90 Classic", 350, dimensions);
+        ProductData product = new Product(2, "Tênis Nike", "Air max 90 Classic", 350, null);
         return new ProductController().store(product);
     }
 

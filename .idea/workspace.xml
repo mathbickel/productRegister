@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f73826-2618-4622-b1aa-fd3e799f0928" name="Changes" comment="remove test">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_16_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jackson_databind_2_16_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_databind_2_16_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_2.xml" afterDir="false" />
+    <list default="true" id="46f73826-2618-4622-b1aa-fd3e799f0928" name="Changes" comment="task: refota função getquery no Driver.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productRegistration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/productRegistration.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Domain/ProductData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Domain/ProductData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Infra/ProductRepositoryMySql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Infra/ProductRepositoryMySql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +27,26 @@
   </component>
   <component name="Git.Settings">
     <branch-grouping />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feat/sql-queries" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mathbickel"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="855414b7-a278-4eb9-9368-e78fc64fd9d9" />
+        <option name="url" value="https://github.com/mathbickel/productRegister.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -50,7 +68,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "task/sql-queries",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/matheusbickel/www/productRegistration",
     "onboarding.tips.debug.path": "/Users/matheusbickel/Downloads/productRegistration/oductRegistration/src/Main.java",
@@ -132,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712873138896</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task: adiciona sql driver e primeiro insert de produtos.">
+      <option name="closed" value="true" />
+      <created>1712874723118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712874723118</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,7 +195,9 @@
     <MESSAGE value="fix" />
     <MESSAGE value="test" />
     <MESSAGE value="remove test" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove test" />
+    <MESSAGE value="task: adiciona sql driver e primeiro insert de produtos." />
+    <MESSAGE value="task: refota função getquery no Driver.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="task: refota função getquery no Driver.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
