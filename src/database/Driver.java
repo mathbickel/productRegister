@@ -1,9 +1,9 @@
 package database;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import data.Domain.Product;
 import data.Domain.ProductData;
-
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -37,15 +37,16 @@ public class Driver {
                 String name = resultSet.getString("name");
                 String description = resultSet.getString("description");
                 double value = resultSet.getDouble("value");
-                Array dimensions = resultSet.getArray("dimensions");
-                ProductData products = new Product(id, name, description, value, null);
+                String dimensions = resultSet.getString("dimensions");
+                ProductData products = new Product(id, name, description, value, this.buildDimensionsArr(dimensions));
                 prods.add(products);
             }
+            System.out.println(prods);
             return prods;
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
+            throw new RuntimeException();
         }
-        return null;
     }
 
     private PreparedStatement buildStatement(PreparedStatement statement, ProductData product) {
@@ -64,5 +65,11 @@ public class Driver {
             exception.printStackTrace();
             throw new RuntimeException();
         }
+    }
+
+    private ArrayList<String> buildDimensionsArr(String dimensions) {
+        ArrayList<String> stringArray = new ArrayList<>();
+        stringArray.add(dimensions);
+        return stringArray;
     }
 }
