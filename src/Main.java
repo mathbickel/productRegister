@@ -5,8 +5,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        showProducts();
+//        showProducts();
 //        createProd();
+        getById(1);
     }
 
     public static ProductData createProd() {
@@ -22,7 +23,7 @@ public class Main {
         return new ProductController().show();
     }
 
-    public static ProductData getById() {
-        return new ProductController().getById(1);
+    public static ProductData getById(int id) {
+        return new ProductController().getById(id);
     }
 }

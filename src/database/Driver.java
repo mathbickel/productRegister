@@ -38,7 +38,7 @@ public class Driver {
                 String description = resultSet.getString("description");
                 double value = resultSet.getDouble("value");
                 String dimensions = resultSet.getString("dimensions");
-                ProductData products = new Product(id, name, description, value, this.buildDimensionsArr(dimensions));
+                Product products = new Product(id, name, description, value, this.buildDimensionsArr(dimensions));
                 prods.add(products);
             }
             System.out.println(prods);
@@ -47,6 +47,25 @@ public class Driver {
             sqlException.printStackTrace();
             throw new RuntimeException();
         }
+    }
+
+    public Product getById(int id) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/products","root", "");
+             Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(STR."SELECT * FROM product WHERE ID = \{id}");
+            while (resultSet.next()) {
+                int id2 = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String description = resultSet.getString("description");
+                double value = resultSet.getDouble("value");
+                String dimensions = resultSet.getString("dimensions");
+                return new Product(id2, name, description, value, this.buildDimensionsArr(dimensions));
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
     }
 
     private PreparedStatement buildStatement(PreparedStatement statement, ProductData product) {

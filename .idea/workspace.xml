@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f73826-2618-4622-b1aa-fd3e799f0928" name="Changes" comment="task: refatora insert de produto na Driver.java">
+    <list default="true" id="46f73826-2618-4622-b1aa-fd3e799f0928" name="Changes" comment="task: Refatoração do método getAll.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Domain/ProductData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Domain/ProductData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Infra/ProductRepositoryMySql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Infra/ProductRepositoryMySql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713036410973</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="task: Refatoração do método getAll.">
+      <option name="closed" value="true" />
+      <created>1713038907305</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713038907305</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,7 +228,8 @@
     <MESSAGE value="task: adiciona sql driver e primeiro insert de produtos." />
     <MESSAGE value="task: refota função getquery no Driver.java" />
     <MESSAGE value="task: refatora insert de produto na Driver.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="task: refatora insert de produto na Driver.java" />
+    <MESSAGE value="task: Refatoração do método getAll." />
+    <option name="LAST_COMMIT_MESSAGE" value="task: Refatoração do método getAll." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -230,11 +238,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="8" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/database/Driver.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

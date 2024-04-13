@@ -24,8 +24,7 @@ public class ProductRepositoryMySql implements ProductRepository {
 
     @Override
     public ProductData getById(int id) {
-        Array dimensions = null;
-        return null;
+        return new Driver().getById(id);
     }
 
     @Override
