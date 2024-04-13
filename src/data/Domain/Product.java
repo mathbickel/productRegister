@@ -1,9 +1,9 @@
 package data.Domain;
 
-import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Product extends ProductData {
-    public Product(int id, String name, String description, double value, Array dimensions) {
+    public Product(int id, String name, String description, double value, ArrayList<Integer> dimensions) {
         super(id, name, description, value, dimensions);
     }
 
@@ -28,7 +28,7 @@ public class Product extends ProductData {
     }
 
     @Override
-    public Array getDimensions() {
+    public ArrayList<Integer> getDimensions() {
         return this.dimensions;
     }
 }
