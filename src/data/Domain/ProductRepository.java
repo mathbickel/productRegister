@@ -1,8 +1,6 @@
 package data.Domain;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
-
 public interface ProductRepository {
     ProductData store(ProductData product);
     ArrayList<ProductData> getAll();

@@ -2,7 +2,6 @@ package data.Infra;
 
 import data.Domain.ProductData;
 import data.Domain.ProductService;
-
 import java.util.ArrayList;
 
 public class ProductServiceImp implements ProductService {
