@@ -7,9 +7,9 @@ public abstract class ProductData {
     String name;
     String description;
     double value;
-    ArrayList<Integer> dimensions;
+    ArrayList<String> dimensions;
 
-    public ProductData(int id, String name, String description, double value, ArrayList<Integer> dimensions) {
+    public ProductData(int id, String name, String description, double value, ArrayList<String> dimensions) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -20,5 +20,21 @@ public abstract class ProductData {
     public abstract String getName();
     public abstract String getDescription();
     public abstract double getValue();
-    public abstract ArrayList<Integer> getDimensions();
+    public abstract ArrayList<String> getDimensions();
+
+    public void setId(int id) {
+    }
+
+    public void setName(String name) {
+
+    }
+
+    public void setDescription(String description) {
+    }
+
+    public void setValue(double value) {
+    }
+
+    public void setDimensions(ArrayList<String> dimensions) {
+    }
 }

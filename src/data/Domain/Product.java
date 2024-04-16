@@ -3,7 +3,7 @@ package data.Domain;
 import java.util.ArrayList;
 
 public class Product extends ProductData {
-    public Product(int id, String name, String description, double value, ArrayList<Integer> dimensions) {
+    public Product(int id, String name, String description, double value, ArrayList<String> dimensions) {
         super(id, name, description, value, dimensions);
     }
 
@@ -28,7 +28,32 @@ public class Product extends ProductData {
     }
 
     @Override
-    public ArrayList<Integer> getDimensions() {
+    public ArrayList<String> getDimensions() {
         return this.dimensions;
+    }
+
+    @Override
+    public void setId(int id) {
+        super.setId(id);
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public void setDescription(String description) {
+        super.setDescription(description);
+    }
+
+    @Override
+    public void setValue(double value) {
+        super.setValue(value);
+    }
+
+    @Override
+    public void setDimensions(ArrayList<String> dimensions) {
+        super.setDimensions(dimensions);
     }
 }
