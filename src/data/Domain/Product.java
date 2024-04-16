@@ -31,4 +31,29 @@ public class Product extends ProductData {
     public ArrayList<String> getDimensions() {
         return this.dimensions;
     }
+
+    @Override
+    public void setId(int id) {
+        super.setId(id);
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public void setDescription(String description) {
+        super.setDescription(description);
+    }
+
+    @Override
+    public void setValue(double value) {
+        super.setValue(value);
+    }
+
+    @Override
+    public void setDimensions(ArrayList<String> dimensions) {
+        super.setDimensions(dimensions);
+    }
 }

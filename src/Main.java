@@ -1,3 +1,4 @@
+import Http.router.adapter.SparkAdapter;
 import controller.ProductController;
 import data.Domain.Product;
 import data.Domain.ProductData;
@@ -7,7 +8,8 @@ public class Main {
     public static void main(String[] args) {
 //        showProducts();
 //        createProd();
-        getById(1);
+//        getById(1);
+        new SparkAdapter();
     }
 
     public static ProductData createProd() {
@@ -25,5 +27,9 @@ public class Main {
 
     public static ProductData getById(int id) {
         return new ProductController().getById(id);
+    }
+
+    public static Product update(int id) {
+        return null;
     }
 }

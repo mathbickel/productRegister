@@ -68,6 +68,31 @@ public class Driver {
         return null;
     }
 
+    public Product update(int id) {
+        // Your update logic here
+        return null;
+    }
+
+    private Product updateName(int id, String name) {
+        // Your update logic here for name
+        return null;
+    }
+
+    private Product updateDescription(int id, String description) {
+        // Your update logic here for description
+        return null;
+    }
+
+    private Product updateValue(int id, double value) {
+        // Your update logic here for value
+        return null;
+    }
+
+    private Product updateDimensions(int id, ArrayList<Integer> dimensions) {
+        // Your update logic here for dimensions
+        return null;
+    }
+
     private PreparedStatement buildStatement(PreparedStatement statement, ProductData product) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
