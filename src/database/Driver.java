@@ -38,7 +38,7 @@ public class Driver {
                 String description = resultSet.getString("description");
                 double value = resultSet.getDouble("value");
                 String dimensions = resultSet.getString("dimensions");
-                ProductData products = new Product(id, name, description, value, this.buildDimensionsArr(dimensions));
+                Product products = new Product(id, name, description, value, this.buildDimensionsArr(dimensions));
                 prods.add(products);
             }
             System.out.println(prods);
@@ -47,6 +47,50 @@ public class Driver {
             sqlException.printStackTrace();
             throw new RuntimeException();
         }
+    }
+
+    public Product getById(int id) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/products","root", "");
+             Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(STR."SELECT * FROM product WHERE ID = \{id}");
+            while (resultSet.next()) {
+                int id2 = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String description = resultSet.getString("description");
+                double value = resultSet.getDouble("value");
+                String dimensions = resultSet.getString("dimensions");
+                return new Product(id2, name, description, value, this.buildDimensionsArr(dimensions));
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+    public Product update(int id) {
+        // Your update logic here
+        return null;
+    }
+
+    private Product updateName(int id, String name) {
+        // Your update logic here for name
+        return null;
+    }
+
+    private Product updateDescription(int id, String description) {
+        // Your update logic here for description
+        return null;
+    }
+
+    private Product updateValue(int id, double value) {
+        // Your update logic here for value
+        return null;
+    }
+
+    private Product updateDimensions(int id, ArrayList<Integer> dimensions) {
+        // Your update logic here for dimensions
+        return null;
     }
 
     private PreparedStatement buildStatement(PreparedStatement statement, ProductData product) {

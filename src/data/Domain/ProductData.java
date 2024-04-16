@@ -1,6 +1,5 @@
 package data.Domain;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 public abstract class ProductData {
@@ -22,4 +21,20 @@ public abstract class ProductData {
     public abstract String getDescription();
     public abstract double getValue();
     public abstract ArrayList<String> getDimensions();
+
+    public void setId(int id) {
+    }
+
+    public void setName(String name) {
+
+    }
+
+    public void setDescription(String description) {
+    }
+
+    public void setValue(double value) {
+    }
+
+    public void setDimensions(ArrayList<String> dimensions) {
+    }
 }

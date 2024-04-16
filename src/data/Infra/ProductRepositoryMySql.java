@@ -3,7 +3,6 @@ package data.Infra;
 import data.Domain.ProductData;
 import data.Domain.ProductRepository;
 import database.Driver;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
@@ -24,13 +23,12 @@ public class ProductRepositoryMySql implements ProductRepository {
 
     @Override
     public ProductData getById(int id) {
-        Array dimensions = null;
-        return null;
+        return new Driver().getById(id);
     }
 
     @Override
     public ProductData update(int id) {
-        return null;
+        return new Driver().update(id);
     }
 
     @Override
