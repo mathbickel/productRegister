@@ -14,7 +14,10 @@
     <orderEntry type="library" name="slf4j-simple-2.0.13" level="project" />
     <orderEntry type="library" name="servlet-api-2.5" level="project" />
     <orderEntry type="library" name="jackson-databind-2.16.1" level="project" />
-    <orderEntry type="library" name="jetty-server-12.0.5" level="project" />
     <orderEntry type="library" name="jetty-servlet-11.0.15" level="project" />
+    <orderEntry type="library" name="jetty-webapp-11.0.20" level="project" />
+    <orderEntry type="library" name="jetty-io-9.3.27.v20190418" level="project" />
+    <orderEntry type="library" name="jetty-server-12.0.8" level="project" />
+    <orderEntry type="library" name="jetty-util-12.0.6" level="project" />
   </component>
 </module>

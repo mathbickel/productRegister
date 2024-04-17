@@ -28,7 +28,7 @@ public class ProductController implements BaseController {
     }
 
     @Override
-    public ArrayList<ProductData> update(int id) {
+    public ProductData update(int id) {
         return null;
     }
 
